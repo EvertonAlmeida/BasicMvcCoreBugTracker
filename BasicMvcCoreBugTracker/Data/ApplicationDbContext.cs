@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using BasicMvcCoreBugTracker.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace BasicMvcCoreBugTracker.Data
 {
@@ -12,5 +13,6 @@ namespace BasicMvcCoreBugTracker.Data
             : base(options)
         {
         }
+            public DbSet<Severity> Severities { get; set; }
     }
 }
