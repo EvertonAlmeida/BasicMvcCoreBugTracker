@@ -15,5 +15,6 @@ namespace BasicMvcCoreBugTracker.Data
         }
             public DbSet<Severity> Severities { get; set; }
             public DbSet<BasicMvcCoreBugTracker.Models.Status> Status { get; set; }
+            public DbSet<BasicMvcCoreBugTracker.Models.Bug> Bug { get; set; }
     }
 }
